@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>情報ネットワーク入門</title>
+    <title>情報ネットワーク入門課題</title>
+	<meta name="author" content="Myself">
+	<meta name="title" content="情報ネットワーク入門課題">
+	<meta name="keywords" content="HTML, HTML課題">
+	<meta name="description" content="testing">
 </head>
 <body>
     <h1>HTML課題</h1>
@@ -113,34 +117,105 @@ while True:
 	print("")
 		</pre>
 	<h3><a name="sec2-7">文書の途中へジャンプ</a></h3>
-		<p><a herf="#contents">目次</a></p>
+		<p><a href="#contents">目次</a></p>
 	<h3><a name="sec2-8">表組の基礎(1)</a></h3>
+		<table border width="10%">
+		<caption>行列</caption>
+		  <tr>
+			<th>2</th>
+			<td>7</td>
+			<td>1</td>
+		  </tr>
+		  <tr>
+			<td>8</td>
+			<th>2</th>
+			<td>8</td>
+		  </tr>
+		  <tr>
+			<td>1</td>
+			<td>8</td>
+			<th>2</th>
+		  </tr>
+		</table>
 	<h3><a name="sec2-9">表組の基礎(2)</a></h3>
+		<table border width="10%" summary="idk">
+		  <tr>
+			<td></td>
+			<th>a</th>
+			<th>b</th>
+			<th>c</th>
+		  </tr>
+		  <tr>
+			<th>x</th>
+			<td>2</td>
+			<td>7</td>
+			<td>1</td>
+		  </tr>
+		  <tr>
+			<th>y</th>
+			<td>8</td>
+			<td>2</td>
+			<td>8</td>
+		  </tr>
+		  <tr>
+			<th>z</th>
+			<td>1</td>
+			<td>8</td>
+			<td>2</td>
+		  </tr>
+		</table>
 	<h3><a name="sec2-10">フレーム化(1)</a></h3>
 	<h3><a name="sec2-11">フレーム化(2)</a></h3>
 	<h3><a name="sec2-12">複雑な表組</a></h3>
+		<table border width="10%">
+		<caption>idk</caption>
+		  <tr>
+			<td></td>
+			<th>a</th>
+			<th>b</th>
+			<th>c</th>
+		  </tr>
+		  <tr>
+			<th>x<br>x</th>
+			<td align="left">2</td>
+			<td align="right">7</td>
+			<td align="center">1</td>
+		  </tr>
+		  <tr>
+			<th>y<br>y</th>
+			<td align="justify">8</td>
+			<td align="char">2</td>
+			<td valign="top">8</td>
+		  </tr>
+		  <tr>
+			<th>z<br>z</th>
+			<td valign="bottom">1</td>
+			<td valign="middle">8</td>
+			<td valign="baseline">2</td>
+		  </tr>
+		</table>
+		<table border width="20%">
+		<tr><th>O</th><th>a</th><th>b</th><th>c</th><tr>
+		<tr><TH ROWSPAN="2">w</th><TD ROWSPAN="2">759</td>
+		<td ROWSPAN="2">324</td><td>452</td></tr>
+		<tr><td>756</td></tr>
+		<tr><th>x</th><td>267</td><td>478</td><td>456</td></tr>
+		<tr><th ROWSPAN="3">y</th><TD ROWSPAN="3">346</td><td>567</td><TD ROWSPAN="3">257</td></tr>
+		<tr><td>167</td></tr>
+		<tr><td>145</td></tr>
+		<tr><th>z</th><TD COLSPAN="2">254</td><td>346</td></tr>
+		<table>
 	<h3><a name="sec2-13">文書情報の基礎</a></h3>
-
-
-	<blockquote>
-	idk
-	what ever
-	<p>and p tag</p> 
-	</blockquote>
-
-	<p>プログラムソース</p>
-	<pre>
-	while True:
-		h, w = map(int, input().split())
-		if h == w == 0:
-			break
-		for i in range(h):
-			for k in range(w-1):
-				print("#", end ="")
-			print("#")
-		print("")
-	</pre>
-
+		<pre>
+  &lt;head&gt;
+    &lt;title&gt;...&lt;/title&gt;
+	&lt;meta http-equiv="Content-Type"..."&gt;
+	&lt;meta name="author" content="..."&gt;
+	&lt;meta name="title" content="..."&gt;
+	&lt;meta name="keywords" content="..."&gt;
+	&lt;meta name="description" content="..."&gt;
+  &lt;/head&gt;
+		</pre>
 	<p><a HREF="#contents">先頭へ戻る</a></p>
 </body>
 </html>
