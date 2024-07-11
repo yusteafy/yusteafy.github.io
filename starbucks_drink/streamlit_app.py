@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-df = pd.read_csv('starbucks.csv')
+df = pd.read_csv("starbucks_drink//starbucks.csv")
 df_header = list(df)
 
 translations = {
